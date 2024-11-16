@@ -5,21 +5,21 @@
 class Kubelog < Formula
   desc "CLI tool to fetch and enhance Kubernetes pod logs"
   homepage "https://github.com/dantech2000/kubelog"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/dantech2000/kubelog/releases/download/v0.1.2/kubelog_Darwin_x86_64.tar.gz"
-      sha256 "45eb3b491d4b05f35d32234dafc87124621613f81cb35ba3dc3b36d4faaf1015"
+      url "https://github.com/dantech2000/kubelog/releases/download/v0.1.3/kubelog_Darwin_x86_64.tar.gz"
+      sha256 "e5d03159bbf0170fd92cfaa6f8dc6475d0d64b01591c480305a9e8cc0f3d2212"
 
       def install
         bin.install "kubelog"
       end
     end
     on_arm do
-      url "https://github.com/dantech2000/kubelog/releases/download/v0.1.2/kubelog_Darwin_arm64.tar.gz"
-      sha256 "e93b9ba6eadf446c4e418786923acb96390f877042685200d243c77e6361ea50"
+      url "https://github.com/dantech2000/kubelog/releases/download/v0.1.3/kubelog_Darwin_arm64.tar.gz"
+      sha256 "540dded5fc894cdad0b26a7b7dc6ef7299fc9ba69814a83cdc127ece070f4557"
 
       def install
         bin.install "kubelog"
@@ -30,8 +30,8 @@ class Kubelog < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dantech2000/kubelog/releases/download/v0.1.2/kubelog_Linux_x86_64.tar.gz"
-        sha256 "cf945d2209f4114e118f5d02da0453b45be6e7b62792b4526966ce505abe5f39"
+        url "https://github.com/dantech2000/kubelog/releases/download/v0.1.3/kubelog_Linux_x86_64.tar.gz"
+        sha256 "82505841ac00d3d958cc8638c331215f82128d066e8adf8fc93d8cb32a86ba14"
 
         def install
           bin.install "kubelog"
@@ -40,8 +40,8 @@ class Kubelog < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dantech2000/kubelog/releases/download/v0.1.2/kubelog_Linux_arm64.tar.gz"
-        sha256 "33d7b061ba508728f06124799ac7d6aab51626242f3678c7d932d3707be833d1"
+        url "https://github.com/dantech2000/kubelog/releases/download/v0.1.3/kubelog_Linux_arm64.tar.gz"
+        sha256 "e750ec67758dde821228e0e9c0a359f397a52887f333a89d66612bea8dd269f6"
 
         def install
           bin.install "kubelog"
