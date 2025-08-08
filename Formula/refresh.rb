@@ -5,21 +5,21 @@
 class Refresh < Formula
   desc "Manage and monitor AWS EKS node groups using your local kubeconfig and AWS credentials"
   homepage "https://github.com/dantech2000/refresh"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dantech2000/refresh/releases/download/v0.2.0/refresh_0.2.0_darwin_amd64.tar.gz"
-      sha256 "9216eb320ee8ede510869789fc8901fe02942aab02b97cefeaed92c43108bdcf"
+      url "https://github.com/dantech2000/refresh/releases/download/v0.2.1/refresh_0.2.1_darwin_amd64.tar.gz"
+      sha256 "43267bf8523eed22975a4d83ec52c02b777b9d7e4d186e869937ede975427b68"
 
       def install
         bin.install "refresh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dantech2000/refresh/releases/download/v0.2.0/refresh_0.2.0_darwin_arm64.tar.gz"
-      sha256 "ee9ae1d91094cae401be46530dc2f2f5892f7279194d1091e8cd59ff68917e5d"
+      url "https://github.com/dantech2000/refresh/releases/download/v0.2.1/refresh_0.2.1_darwin_arm64.tar.gz"
+      sha256 "6272d346a23bcc7e3c7f37f0518701178cfdb55dd6b678a66368379b71846d62"
 
       def install
         bin.install "refresh"
@@ -29,15 +29,15 @@ class Refresh < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/dantech2000/refresh/releases/download/v0.2.0/refresh_0.2.0_linux_amd64.tar.gz"
-      sha256 "fb33dfa659b32b7200cc88533cfeb57486c621c36e3d63d168f47e03680de579"
+      url "https://github.com/dantech2000/refresh/releases/download/v0.2.1/refresh_0.2.1_linux_amd64.tar.gz"
+      sha256 "ccecd8842b7961c62336281acb9e120a0b90f6e0302b185d2856fc80dc0ab05c"
       def install
         bin.install "refresh"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/dantech2000/refresh/releases/download/v0.2.0/refresh_0.2.0_linux_arm64.tar.gz"
-      sha256 "dec2734ffd1e38cf31ca1ba01bdf605d3c1893f3067d9a9c4be851cb7d13861c"
+      url "https://github.com/dantech2000/refresh/releases/download/v0.2.1/refresh_0.2.1_linux_arm64.tar.gz"
+      sha256 "005948219a996b4ae6f080e46126b642cf441a7167c3f4b109206f7627d918d5"
       def install
         bin.install "refresh"
       end
