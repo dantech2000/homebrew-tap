@@ -10,14 +10,14 @@ First, add this tap to your Homebrew:
 brew tap dantech2000/tap
 ```
 
-## Available Formulae
+## Available Casks
 
 ### refresh
 
 Manage and monitor AWS EKS node groups using your local kubeconfig and AWS credentials.
 
 ```bash
-brew install refresh
+brew install --cask dantech2000/tap/refresh
 ```
 
 **Features:**
@@ -27,6 +27,7 @@ brew install refresh
 - Color-coded status indicators
 
 **Requirements:**
+- macOS (Intel or Apple Silicon)
 - AWS credentials configured
 - kubeconfig file for EKS access
 
@@ -51,6 +52,6 @@ This tap is automatically updated when new releases are published to the respect
 
 ## Issues
 
-If you encounter any issues with the formulae, please report them in the respective tool's repository:
+If you encounter any issues with the casks, please report them in the respective tool's repository:
 
-- [refresh](https://github.com/dantech2000/refresh/issues) 
+- [refresh](https://github.com/dantech2000/refresh/issues)
