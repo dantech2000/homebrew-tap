@@ -3,7 +3,7 @@ cask "refresh" do
   name "refresh"
   desc "Manage and monitor AWS EKS node groups using your local kubeconfig and AWS credentials"
   homepage "https://github.com/dantech2000/refresh"
-  version "0.2.2"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "refresh" do
   on_macos do
     on_intel do
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_amd64.tar.gz"
-      sha256 "69d69f8bd68579d7757e0aa599f2037516a3b95f901cf165c502701d0c3786f8"
+      sha256 "bc8c849e5364961e5eb3547857af22051103765ef906797fcd57b67c8231acd5"
     end
     on_arm do
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_arm64.tar.gz"
-      sha256 "a284c32ee5142008b01e48b3ad4f89e4bc0d706a0d7e0061f7ed2d5a5da3fda9"
+      sha256 "28400d86d239bf14ef9507d447aedf77e9bd0cf784f4e0a914d63924fafda8ed"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_amd64.tar.gz"
-      sha256 "d52cfa6a0ed5336bac9d7d9b1361a3b3e2d70e5b3f14a4d46599bd2b3bb90afd"
+      sha256 "e3729d97a9e64a6af4fc519988fffb2581ac6cdfdd55146320ab5bf92da8fb06"
     end
     on_arm do
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_arm64.tar.gz"
-      sha256 "2caa25202f6410c2a8a712b8d7df0958fe9e947903c2614bd090744045a7b5a7"
+      sha256 "0bd1fe268a1389cf97a7ea0189207f3f6573ff1ef69820103539ca1932b996a0"
     end
   end
 
