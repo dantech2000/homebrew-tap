@@ -32,6 +32,8 @@ cask "refresh" do
     skip "Auto-generated on release."
   end
 
+  quarantine false
+
   binary "refresh"
 
   # No zap stanza required
