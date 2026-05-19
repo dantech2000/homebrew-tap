@@ -12,6 +12,30 @@ brew tap dantech2000/tap
 
 ## Available Casks
 
+### logx
+
+Enhanced Kubernetes pod log viewer with structured parsing, filtering, readable output, and `kubectl` plugin support.
+
+```bash
+brew install --cask dantech2000/tap/logx
+```
+
+**Installed binaries:**
+- `logx`
+- `kubectl-logx`
+
+**Features:**
+- Fetch and follow Kubernetes pod logs
+- Parse JSON and plain-text log output
+- Highlight timestamps, levels, and useful fields
+- Select containers in multi-container pods
+- Run as `kubectl logx`
+
+**Requirements:**
+- macOS or Linux
+- Kubernetes cluster access
+- kubeconfig configured for the target cluster
+
 ### refresh
 
 Manage and monitor AWS EKS node groups using your local kubeconfig and AWS credentials.
@@ -36,6 +60,12 @@ brew install --cask dantech2000/tap/refresh
 After installation, you can use the tools directly:
 
 ```bash
+# Follow pod logs with logx
+logx my-pod -n my-namespace -f
+
+# Use logx as a kubectl plugin
+kubectl logx my-pod -n my-namespace
+
 # List nodegroups in a cluster
 refresh list --cluster development-blue
 
@@ -54,4 +84,5 @@ This tap is automatically updated when new releases are published to the respect
 
 If you encounter any issues with the casks, please report them in the respective tool's repository:
 
+- [logx](https://github.com/dantech2000/logx/issues)
 - [refresh](https://github.com/dantech2000/refresh/issues)
