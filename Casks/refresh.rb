@@ -6,25 +6,25 @@ cask "refresh" do
     end
   end
 
-  version "0.15.0"
+  version "0.16.0"
 
   on_macos do
     on_arm do
-      sha256 "a93e89149ed0b0618798c78c83c9e397cab72fd898e0cb8e50d043fa6c301f16"
+      sha256 "fc84c4344d2d34af5cc0297060b6fb59a9c4febb46a596a52f38dc6099b0b13f"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "58d4148c9985a61b28f0875d6879dd4bfd67118b70166930b07f0f78ede45e6b"
+      sha256 "30756d98e71774e4db446b7807ec005c5179e85242ac138815fbab8505712f77"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0dda67ca660e6c4a42e71981a85be47b7159b9f18faa9607b3e39296393a161e"
+      sha256 "d78800a6af591aadcde033c0a1f8aa142d7c5fb53832d3a3398bb5fd165fc6dd"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5998003cd1e6c15956cc6145987c6cbdbeabc149eddb7e229862d215f2ee9f8f"
+      sha256 "2564b9e889d45804e5d15d78ae0db548723ee3c2f2beaaf1a926a4bfca47dfc1"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_amd64.tar.gz"
     end
   end
