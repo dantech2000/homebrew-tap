@@ -6,31 +6,31 @@ cask "refresh" do
     end
   end
 
-  version "0.16.0"
+  version "0.17.0"
 
   on_macos do
     on_arm do
-      sha256 "fc84c4344d2d34af5cc0297060b6fb59a9c4febb46a596a52f38dc6099b0b13f"
+      sha256 "ebe9def51f12c0d130a67f90e89541de987a1ccb2e2ad92f434dc7d4c77e4c21"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "30756d98e71774e4db446b7807ec005c5179e85242ac138815fbab8505712f77"
+      sha256 "2efdab18f40206055d2c3a3696a3331f56caa5d5e01d177b2b94eda4f82e19e0"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d78800a6af591aadcde033c0a1f8aa142d7c5fb53832d3a3398bb5fd165fc6dd"
+      sha256 "0d794290973fe8597ba42edfca6b1b1369d731b901ecdda129993301c5cb7bf0"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2564b9e889d45804e5d15d78ae0db548723ee3c2f2beaaf1a926a4bfca47dfc1"
+      sha256 "b9cc7b1076f98481d10e3a9216c1c99442fe62d61fab4d77c7f02cbe0d270882"
       url "https://github.com/dantech2000/refresh/releases/download/v#{version}/refresh_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "refresh"
-  desc "Manage and monitor AWS EKS node groups using your local kubeconfig and AWS credentials"
+  desc "Keep Amazon EKS clusters up to date: status, readiness, patch, upgrade"
   homepage "https://github.com/dantech2000/refresh"
 
   livecheck do
@@ -38,6 +38,36 @@ cask "refresh" do
   end
 
   binary "refresh"
+  manpage "man/man1/refresh-addon-describe.1"
+  manpage "man/man1/refresh-addon-list.1"
+  manpage "man/man1/refresh-addon-update.1"
+  manpage "man/man1/refresh-addon.1"
+  manpage "man/man1/refresh-cluster-describe.1"
+  manpage "man/man1/refresh-cluster-list.1"
+  manpage "man/man1/refresh-cluster-rollback.1"
+  manpage "man/man1/refresh-cluster-upgrade-check.1"
+  manpage "man/man1/refresh-cluster-upgrade.1"
+  manpage "man/man1/refresh-cluster.1"
+  manpage "man/man1/refresh-completion-bash.1"
+  manpage "man/man1/refresh-completion-fish.1"
+  manpage "man/man1/refresh-completion-powershell.1"
+  manpage "man/man1/refresh-completion-zsh.1"
+  manpage "man/man1/refresh-completion.1"
+  manpage "man/man1/refresh-context-add.1"
+  manpage "man/man1/refresh-context-current.1"
+  manpage "man/man1/refresh-context-list.1"
+  manpage "man/man1/refresh-context-remove.1"
+  manpage "man/man1/refresh-context-use.1"
+  manpage "man/man1/refresh-context.1"
+  manpage "man/man1/refresh-nodegroup-describe.1"
+  manpage "man/man1/refresh-nodegroup-list.1"
+  manpage "man/man1/refresh-nodegroup-scale.1"
+  manpage "man/man1/refresh-nodegroup-update.1"
+  manpage "man/man1/refresh-nodegroup.1"
+  manpage "man/man1/refresh-status.1"
+  manpage "man/man1/refresh-ui.1"
+  manpage "man/man1/refresh-version.1"
+  manpage "man/man1/refresh.1"
 
   # No zap stanza required
 end
